@@ -88,3 +88,9 @@ margin-left: 500px;
     font-size: 40px;
     color: rgb(100, 100, 0);
 }
+
+.page-footer {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(11, 200, 100);
+}
