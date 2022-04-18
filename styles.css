@@ -1,0 +1,90 @@
+.page-header {
+    color: rgb(0, 145, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.page-paragraph {
+    font-size: 20px;
+    color: rgb(120, 0, 0);
+    display: flexbox;
+
+}
+
+.page-button {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.page-section {
+    text-align: left;
+}
+
+.page-article {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(100, 3, 3);
+}
+
+.page-aside {
+    display: block;
+    width: 20%;
+    margin-right: 15px;
+    padding-right: 15px;
+    float: right;
+
+}
+
+.page-quote {
+    font-size: 24px;
+    color: rgb(111, 11, 123);
+}
+
+.page-table, .table-caption {
+    padding-left: 500px;
+}
+
+.aside-header {
+    font-size: 20px;
+    color: rgb(0,0,131);
+    letter-spacing: 1px;
+}
+
+.aside-paragraph {
+    color: rgb(12, 145, 133);
+    font-size: 16px;
+
+}
+
+.article-paragraph {
+    color: rgb(121, 34, 89);
+    font-size: 16px;
+}
+
+.table-column, .table-column-1 {
+    padding: 5px;
+}
+
+.table-header {
+    text-align: center;
+}
+
+.page-details {
+padding: 5px;
+margin: 15px;
+margin-left: 500px;
+}
+
+.details-header {
+    text-align: center;
+
+}
+
+.details-paragraph {
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(100, 100, 0);
+}
