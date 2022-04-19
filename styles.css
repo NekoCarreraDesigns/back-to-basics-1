@@ -110,6 +110,15 @@ margin-left: 500px;
     background-color: rgb(123, 255, 111);
 }
 
+.page-meter {
+    width: 400px;
+    height: 50px;
+}
+
+.meter-label {
+    font-size: 20px;
+}
+
 .page-fieldset {
     background-color: rgb(11, 255, 255);
 }
