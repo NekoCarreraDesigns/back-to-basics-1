@@ -101,6 +101,11 @@ margin-left: 500px;
     color: rgb(144, 132,11);
 }
 
+.page-map {
+    width: 100px;
+    height: 300px;
+}
+
 .page-fieldset {
     background-color: rgb(11, 255, 255);
 }
