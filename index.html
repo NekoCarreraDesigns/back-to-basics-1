@@ -145,6 +145,17 @@
         <option value="Nirvana">Nirvana</option>
       </optgroup>
     </select>
+    <br />
+    <br />
+    <h1>math output</h1>
+    <form
+      class="page-math"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      <input type="range" id="a" value="50" />
+      +<input type="number" id="b" value="'25" />
+      <output name="x" for="a b"></output>
+    </form>
     <button title="this is a button" class="page-button">Push Me</button>
     <footer class="page-footer">
       <h3>
