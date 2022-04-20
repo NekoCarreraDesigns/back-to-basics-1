@@ -133,6 +133,19 @@ s {
     text-decoration-color: rgb(222, 0, 123);
 }
 
+#myDiv {
+    width: 300px;
+    height: 200px;
+    background: rgb(255, 0, 0);
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-color: rgb(255, 0, 0)}
+    to {background-color: rgb(0, 0, 255);}
+}
+
 .page-fieldset {
     background-color: rgb(11, 255, 255);
 }
+
