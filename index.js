@@ -8,3 +8,9 @@ context.fillStyle = "blue";
 context.fillRect(50, 50, 75, 50);
 context.fillStyle = "green";
 context.fillRect(80, 80, 75, 50);
+
+function myFunction() {
+  let x = document.getElementById("page-button");
+  x.style.fontSize = "25px";
+  x.style.color = "red";
+}
