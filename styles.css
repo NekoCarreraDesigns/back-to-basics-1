@@ -155,3 +155,10 @@ s {
     height:100px;
     background-color:rgba(111, 11, 123, 0.5);
 }
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1606833694770-40a04762ac16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHB1cHBpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
