@@ -166,3 +166,10 @@ s {
     height: 300px;
     background-image: repeating-radial-gradient(rgb(0,0,255), rgb(255, 0, 0) 10%, rgb(0, 255, 0) 20%);
 }
+
+.fifth-page-div {
+    width: 200px;
+    height: 200px;
+    background-image: repeating-conic-gradient(rgb(255, 0, 0) 10%, rgb(255,255, 0) 20%);
+    border-radius: 50%;
+}
