@@ -219,3 +219,12 @@ s {
     font-weight: 200;
     font-variant: small-caps;
 }
+
+.puppy-picture {
+    image-rendering: smooth;
+}
+
+.page-image-div {
+    display: flex;
+    justify-content: space-evenly;
+}
