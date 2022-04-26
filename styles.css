@@ -205,3 +205,17 @@ s {
     column-rule: 4px double  rgb(0, 123, 123);
     
 }
+
+.page-font-div {
+    font-stretch: ultra-expanded;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.page-font-div-1 {
+    font-stretch: ultra-condensed;
+    font-style: oblique;
+    font-weight: 200;
+    font-variant: small-caps;
+}
