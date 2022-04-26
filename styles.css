@@ -221,13 +221,15 @@ s {
     font-variant: small-caps;
 }
 
-.puppy-picture {
+.puppy-picture, .puppy-picture-1 {
     image-rendering: smooth;
+    mix-blend-mode: luminosity;
 }
 
 .page-image-div {
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(0, 0, 255);
 }
 
 .animation-div-1 {
