@@ -291,3 +291,13 @@ s {
     background-color: rgb(255, 255, 0);
     order: 1;
 }
+
+.outline-div {
+    border: 1px solid rgb(255, 0, 0);
+    outline: 5px solid rgb(0, 255, 0); 
+}
+
+.outline-header {
+    border: 1px dotted rgb(255, 0, 0);
+    outline: 3px dashed rgb(0, 255, 0);
+}
