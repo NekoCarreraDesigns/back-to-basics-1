@@ -248,3 +248,14 @@ s {
     100% {top: 0px; left: 0px; background: rgb(255, 0, 0);}
     
 }
+
+.image-div {
+    padding: 100px;
+}
+
+.image-a {
+    width: 200px;
+    height: 400px;
+    object-fit: none;
+    object-position: 10px 20%;
+}
