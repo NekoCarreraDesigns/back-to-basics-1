@@ -301,3 +301,51 @@ s {
     border: 1px dotted rgb(255, 0, 0);
     outline: 3px dashed rgb(0, 255, 0);
 }
+
+.cube-example {
+    perspective: 800px;
+    perspective-origin: top;
+    padding: 200px;
+}
+
+.cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(30deg);
+}
+
+.side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(111, 111, 150);
+    border: 1px solid rgb(0,0,0);
+    text-align: center;
+    line-height: 2em;
+}
+
+.front {
+    transform: translateZ(1em);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(1em);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(1em);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(1em);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(1em);
+}
+
+.back {
+    transform: rotateY(-180deg) translateZ(1em);
+}
