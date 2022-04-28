@@ -305,7 +305,7 @@ s {
 .cube-example {
     perspective: 800px;
     perspective-origin: top;
-    padding: 200px;
+    padding: 50px;
 }
 
 .cube {
@@ -348,4 +348,16 @@ s {
 
 .back {
     transform: rotateY(-180deg) translateZ(1em);
+}
+
+.resize-header {
+    padding: 80px;
+}
+
+.resize-div {
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
 }
