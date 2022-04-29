@@ -35,3 +35,15 @@ decrementElement.addEventListener("click", function () {
     setCounterText();
   }
 });
+
+let articleDiv = document.getElementById("articles");
+let mainDiv = document.getElementById("main");
+
+articleDiv.children[0].lastElementChild.style.color = "blue";
+articleDiv.children[0].style.fontSize = "50px";
+articleDiv.previousElementSibling.style.background = "black";
+
+mainDiv.childNodes[1].style.textDecoration = "underline";
+mainDiv.lastElementChild.style.fontSize = "50px";
+mainDiv.firstElementChild.style.color = "orange";
+mainDiv.lastElementChild.parentElement.style.fontSize = "40px";
