@@ -14,3 +14,24 @@ function myFunction() {
   x.style.fontSize = "25px";
   x.style.color = "red";
 }
+
+let count = 0;
+let incrementElement = document.querySelector("#increment");
+let decrementElement = document.querySelector("#decrement");
+let countElement = document.querySelector("#count");
+
+function setCounterText() {
+  countElement.textContent = count;
+}
+
+incrementElement.addEventListener("click", function () {
+  count++;
+  setCounterText();
+});
+
+decrementElement.addEventListener("click", function () {
+  if (count > 0) {
+    count--;
+    setCounterText();
+  }
+});
