@@ -384,3 +384,33 @@ button {
     background-color: rgb(13, 150, 200);
     color: rgb(255, 255, 255);
 }
+
+
+#main { 
+    margin: 0 auto 50px auto;
+    width: 100%;
+    padding: 30px;
+    color: #ffffff;
+    background: #003459;
+    border-bottom: 3px solid #00a8e8;
+    text-align: center;
+  }
+  
+  #articles{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .article-title {
+    text-decoration: underline #003459;
+    margin-bottom: 15px;
+  }
+  
+  .puppies {
+    height: 200px;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
+    border: 2px white;
+  }
+  
