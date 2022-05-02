@@ -101,3 +101,84 @@ for (var i = 0; i < siteTitles.length; i++) {
     "text-decoration: underline; padding-left: 10px; margin: 0;"
   );
 }
+
+let body = document.body;
+let h1Element = document.createElement("h1");
+let h2Element = document.createElement("h2");
+let infoElement = document.createElement("div");
+let imgElement = document.createElement("img");
+let puppyElement = document.createElement("div");
+let nameElement = document.createElement("div");
+let favoriteElement = document.createElement("div");
+let listElement = document.createElement("ol");
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
+
+let listItems = document.getElementsByTagName("li");
+
+h1Element.textContent = "This was made dynamically with no html";
+h2Element.textContent = "this content used js to make it";
+puppyElement.textContent = "this is my puppy";
+nameElement.textContent = "his name is snoopy";
+favoriteElement.textContent = "my favorite foods are: ";
+li1.textContent = "Burritos";
+li2.textContent = "Pizza";
+li3.textContent = "Cheesesteaks";
+li4.textContent = "Baked Ziti";
+
+body.appendChild(h1Element);
+body.appendChild(h2Element);
+body.appendChild(infoElement);
+infoElement.appendChild(imgElement);
+infoElement.appendChild(puppyElement);
+infoElement.appendChild(nameElement);
+body.appendChild(favoriteElement);
+favoriteElement.appendChild(listElement);
+listElement.appendChild(li1);
+listElement.appendChild(li2);
+listElement.appendChild(li3);
+listElement.appendChild(li4);
+
+h1Element.setAttribute(
+  "style",
+  "margin: auto; width: 50%; text-align: center;"
+);
+h2Element.setAttribute(
+  "style",
+  "margin: auto; width: 50%; text-align: center;"
+);
+infoElement.setAttribute(
+  "style",
+  "margin: auto; width: 50%; text-align: center;"
+);
+imgElement.setAttribute(
+  "src",
+  "https://images.unsplash.com/photo-1555505015-d310037140cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGJlYWdsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+);
+imgElement.setAttribute("height", 200);
+imgElement.setAttribute("width", 200);
+nameElement.setAttribute("style", "font-size; 25px; text-align: center;");
+puppyElement.setAttribute("style", "font-size: 25px; text-align: center;");
+favoriteElement.setAttribute("style", "font-size: 20px;");
+listElement.setAttribute(
+  "style",
+  "background: rgb(25, 123, 124); padding: 20px;"
+);
+listItems[0].setAttribute(
+  "style",
+  "color: rgb(255, 255, 255); background: rgb(0, 0, 255); padding: 5px; margin-left: 3px;"
+);
+listItems[1].setAttribute(
+  "style",
+  "color: rgb(255, 255, 255); background: rgb(255, 255, 0); padding: 5px; margin-left: 3px;"
+);
+listItems[2].setAttribute(
+  "style",
+  "color: rgb(255, 255, 255); background: rgb(255, 0, 0); padding: 5px; margin-left: 3px;"
+);
+listItems[3].setAttribute(
+  "style",
+  "color: rgb(255, 255, 255); background: rgb(0, 255, 0); padding: 5px; margin-left: 3px;"
+);
