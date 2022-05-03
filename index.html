@@ -329,6 +329,45 @@
     <h1>A timer made with JavaScript wait for a suprise</h1>
     <h1 class="time"></h1>
     <div id="main-timer"></div>
+    <h1>Event listeners for differentevent types</h1>
+    <div class="event-container">
+      <form>
+        <h1>Select which type of event you want</h1>
+        <select id="event-type">
+        <option value="keydown">
+          Key Events
+        </option>
+        <option value="click">
+          Click Events
+        </option>
+        </select>
+        <div id="key-events">
+          <div>
+            <h2>Keydown and Keyup events</h2>
+            Key Pressed : <span id="key"></span>
+          </div>
+          <div>
+            Key Code : <span id="code"></span>
+          </div>
+          <div>
+            Event status : <span id="status"></span>
+          </div>
+        </div>
+        <div id="click-events" class="hide">
+        <div>
+          <h2>click events</h2>
+          Target Text Content : <span id="target"></span>
+        </div>
+        <div>
+          X coordinates : <span id="x"></span>
+        </div>
+        <div>
+          Y coordinates : <span id="y"></span>
+        </div>
+        </div>
+        </div>
+      </form>
+    </div>
     <footer class="page-footer">
       <h3>
         I am a footer, at the bottom of the page usually contains developer
