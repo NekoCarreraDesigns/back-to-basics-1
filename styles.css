@@ -417,3 +417,22 @@ button {
   .attribute-header {
       padding: 150px;
   }
+
+  .event-container {
+      margin: 50px 100px;
+  }
+
+  input, select, button {
+      height: 40px;
+      margin-right: 30px;
+  }
+
+  button {
+      width: 150px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .hide {
+      display: none;
+  }
