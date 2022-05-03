@@ -191,7 +191,7 @@ let secondsLeft = 10;
 function setTime() {
   let timerInterval = setInterval(function () {
     secondsLeft--;
-    timeElement.textContent = secondsLeft + " seconds left until puppies";
+    timeElement.textContent = secondsLeft + " seconds left until surprise";
 
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
@@ -213,3 +213,44 @@ function sendMessage() {
 }
 
 setTime();
+
+let eventType = document.querySelector("#event-type");
+let mouseEventsElement = document.querySelector("#click-events");
+let keyEventsElement = document.querySelector("#key-events");
+
+function toggleDisplay(event) {
+  let value = event.target.value;
+  if (value === "keydown") {
+    mouseEventsElement.classList.add("hide");
+    keyEventsElement.classList.remove("hide");
+  } else {
+    mouseEventsElement.classList.remove("hide");
+    keyEventsElement.classList.add("hide");
+  }
+}
+
+function keydown(event) {
+  let keyPress = event.key;
+  let keyCode = event.code;
+  document.querySelector("#key").textContent = keyPress;
+  document.querySelector("#code").textContent = keyCode;
+  document.querySelector("#status").textContent = "KEYDOWN Event";
+}
+
+function keyup() {
+  document.querySelector("#status").innerHTML = "KEYUP Event";
+}
+
+function click(event) {
+  let target = event.target.textContent;
+  let x = event.clientX;
+  let y = event.clientY;
+  document.querySelector("#target").textContent = target;
+  document.querySelector("#x").textContent = x;
+  document.querySelector("#y").textContent = y;
+}
+
+document.addEventListener("keydown", keydown);
+document.addEventListener("keyup", keyup);
+document.addEventListener("click", click);
+eventType.addEventListener("change", toggleDisplay);
