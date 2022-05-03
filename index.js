@@ -182,3 +182,34 @@ listItems[3].setAttribute(
   "style",
   "color: rgb(255, 255, 255); background: rgb(0, 255, 0); padding: 5px; margin-left: 3px;"
 );
+
+let mainTimerElement = document.querySelector("#main-timer");
+let timeElement = document.querySelector(".time");
+
+let secondsLeft = 10;
+
+function setTime() {
+  let timerInterval = setInterval(function () {
+    secondsLeft--;
+    timeElement.textContent = secondsLeft + " seconds left until puppies";
+
+    if (secondsLeft === 0) {
+      clearInterval(timerInterval);
+      sendMessage();
+    }
+  }, 1000);
+}
+
+function sendMessage() {
+  timeElement.textContent = " ";
+
+  let imgEl = document.createElement("img");
+
+  imgEl.setAttribute(
+    "src",
+    "https://images.unsplash.com/photo-1546238232-20216dec9f72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHVwcGllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+  );
+  mainTimerElement.appendChild(imgEl);
+}
+
+setTime();
