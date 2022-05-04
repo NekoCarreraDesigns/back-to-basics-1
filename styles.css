@@ -436,3 +436,23 @@ button {
   .hide {
       display: none;
   }
+
+  carouselbox {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+
+  .prev {
+    top: 280px;
+    left: 40px;
+  }
+  
+  .next {
+    top: 280px;
+    left: 240px;
+  }
