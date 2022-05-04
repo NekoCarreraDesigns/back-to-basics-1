@@ -254,3 +254,44 @@ document.addEventListener("keydown", keydown);
 document.addEventListener("keyup", keyup);
 document.addEventListener("click", click);
 eventType.addEventListener("change", toggleDisplay);
+
+let carousel = document.querySelector(".carouselbox");
+let next = document.querySelector(".next");
+let prev = document.querySelector(".prev");
+carousel.style.backgroundImage = "url('https://picsum.photos/200300/')";
+let index = 0;
+let images = [
+  "https://picsum.photos/300/200",
+  "https://picsum.photos/300/201",
+  "https://picsum.photos/300/202",
+  "https://picsum.photos/300/203",
+];
+
+let currentImage;
+function navigate(direction) {
+  index = index + direction;
+  if (index < 0) {
+    index = images.length - 1;
+  } else if (index > images.length - 1) {
+    index = 0;
+  }
+  currentImage = images[index];
+  carousel.style.backgroundImage = "url('" + currentImage + "')";
+}
+
+carousel.addEventListener("click", function () {
+  window.location.href = images[index];
+});
+
+next.onclick = function (event) {
+  event.stopPropagation();
+
+  navigate(1);
+};
+prev.onclick = function (event) {
+  event.stopPropagation();
+
+  navigate(-1);
+};
+
+navigate(0);
